@@ -1,0 +1,8 @@
+<Context path="/escola" reloadable="true" docBase="work/Catalina/localhost">  
+
+ <Resource name="jdbc/escolaDS" auth="Container" type="javax.sql.DataSource"  
+            driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost/escola"  
+            username="root" password="" maxActive="20" maxIdle="10" maxWait="-1" />
+            
+             
+</Context>

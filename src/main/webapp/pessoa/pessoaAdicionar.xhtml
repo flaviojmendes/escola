@@ -1,0 +1,32 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" 
+	xmlns:temp="http://java.sun.com/jsf/composite/components" 
+	template="/templates/html.xhtml">
+
+
+	<ui:define name="body">
+	    <f:metadata>
+		    <f:viewAction action="#{pessoaAdicionarMB.onLoadPage()}" onPostBack="true"/>
+	        
+		</f:metadata>
+	      
+	      <h:form>
+	      	<h:inputText value="#{pessoaAdicionarMB.entity.nome}"></h:inputText>
+	      	<h:inputText value="#{pessoaAdicionarMB.entity.sobrenome}"></h:inputText>
+	      	<h:inputText value="#{pessoaAdicionarMB.entity.cpf}"></h:inputText>
+	      
+	     	<h:commandButton value="Alterar" action="#{pessoaAdicionarMB.add()}"></h:commandButton>
+	      </h:form>
+	      
+	      
+	      
+	      
+	</ui:define>
+		
+	    
+        
+  </ui:composition>

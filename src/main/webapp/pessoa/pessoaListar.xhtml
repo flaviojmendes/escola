@@ -1,0 +1,38 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" 
+	xmlns:temp="http://java.sun.com/jsf/composite/components" 
+	template="/templates/html.xhtml">
+
+
+	<ui:define name="body">
+	      
+	      
+	      <h:dataTable value="#{pessoaListarMB.listarUsuarios()}" 
+	      				var="pessoa">
+	      				
+	      	<h:column>
+	      		<f:facet name="header">Nome</f:facet>
+	      		<h:link value="#{pessoa.nome}" outcome="/pessoa/pessoaDetalhar.xhtml">
+					<f:param name="id" value="#{pessoa.id}"/>
+				</h:link>
+	      		
+	      	</h:column>
+	      	<h:column>
+	      		<f:facet name="header">CPF</f:facet>
+	      		#{pessoa.cpf}
+	      	</h:column>				
+	      
+	      
+	      </h:dataTable>
+	      
+	      
+	      
+	</ui:define>
+		
+	    
+        
+  </ui:composition>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="condominio" match-name="bloco"/>
+  <table-filter match-catalog="condominio" match-name="condominio"/>
+  <table-filter match-catalog="condominio" match-name="mensagem"/>
+  <table-filter match-catalog="condominio" match-name="perfil"/>
+  <table-filter match-catalog="condominio" match-name="pessoa"/>
+  <table-filter match-catalog="condominio" match-name="pessoa_condominio"/>
+  <table-filter match-catalog="condominio" match-name="pessoa_mensagem_enviada"/>
+  <table-filter match-catalog="condominio" match-name="pessoa_mensagem_recebida"/>
+  <table-filter match-catalog="condominio" match-name="pessoa_perfil"/>
+  <table-filter match-catalog="condominio" match-name="pessoa_unidade"/>
+  <table-filter match-catalog="condominio" match-name="unidade"/>
+</hibernate-reverse-engineering>
